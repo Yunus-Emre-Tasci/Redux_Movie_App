@@ -5,10 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
  import {createStore,applyMiddleware} from "redux"
- import thunk from "react-thunk"
- import {
-   rootReducer
- } from "../src/reducers/rootReducer"
+ import thunk from "redux-thunk"
+ import rootReducer from "./reducers/rootReducer"
  import { composeWithDevTools } from 'redux-devtools-extension';
 
  const store=createStore(
